@@ -2,7 +2,40 @@
   color: rgb(177, 118, 10);
 }
 
+.nav-item{
+  text-shadow: 1px 1px 1px black;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
 .row{
   padding-bottom: 3%;
   padding-top: 3%;
+  background-color: rgb(199, 185, 185);
+  padding: 0%;
+  margin: 0%;
+}
+
+.card{
+  background-color: rgb(199, 185, 185);
+}
+
+.cat{
+  z-index: 1;
+  position: absolute;
+}
+
+
+.badge{
+  z-index: 2;
+}
+
+.footer{
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  
 }
