@@ -9,25 +9,42 @@
 }
 
 .row{
-  padding-bottom: 3%;
   padding-top: 3%;
   background-color: rgb(199, 185, 185);
   padding: 0%;
   margin: 0%;
+  background: linear-gradient(0.25turn, rgb(167, 166, 166), white, white)
+}
+
+
+
+.card-img-top{
+  border-radius: 2%;
 }
 
 .card{
-  background-color: rgb(199, 185, 185);
+  background: white;
+  border: 0px;
+  color: rgb(177, 118, 10);
+  text-shadow: rgb(0, 0, 0) 1px 0px 1px;
+  margin-bottom: 6%;
+  
+}
+
+.bdy{
+  background: linear-gradient(0.25turn, rgb(167, 166, 166), white);
 }
 
 .cat{
   z-index: 1;
   position: absolute;
+  width: 100%;
 }
 
 
 .badge{
   z-index: 2;
+  color: orange;
 }
 
 .footer{
@@ -38,4 +55,52 @@
   justify-content: space-between;
   align-items: flex-start;
   
+  
 }
+
+.card-text{
+  text-align: justify;
+}
+
+
+/*responsive footer*/
+@media screen and(min-width: 1200px){
+  .cat{
+    display: none;
+  }
+
+  .dog{
+    z-index: 1;
+    position: absolute;
+    width: 100vw;
+  }
+
+  .footer{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    z-index: 2;
+  }
+
+  .btn{
+    font-size: 2rem;
+    z-index: 2;
+  }
+
+  
+
+  svg{
+    height: 1.2em;
+    width: 1.2em;
+  }
+}
+
+@media screen and (max-width: 1200px){
+  .dog{
+    display: none;
+  }
+    
+}
+
