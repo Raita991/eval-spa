@@ -1,6 +1,11 @@
 /*mobile version*/
+body {
+  margin: 0%;
+  padding: 0%;
+}
+
 .nav-link {
-  color: #b1760a;
+  color: #c0760a;
 }
 
 .nav-item {
@@ -25,7 +30,7 @@
 .card {
   background: white;
   border: 0px;
-  color: #b1760a;
+  color: #c0760a;
   text-shadow: black 1px 0px 1px;
   margin-bottom: 6%;
 }
@@ -61,7 +66,7 @@
 
 .badge {
   z-index: 2;
-  color: #b1760a;
+  color: #c0760a;
   text-shadow: 1px 0px 0px black;
 }
 
@@ -71,6 +76,10 @@
 
 /*responsive lg screen*/
 @media screen and (min-width: 1200px) {
+  body {
+    margin: 0%;
+    padding: 0%;
+  }
   .logo {
     height: 35%;
     width: 35%;
@@ -113,12 +122,15 @@
     font-size: 2rem;
     z-index: 2;
     background-color: transparent;
-    text-shadow: 1px 1px 20px #b1760a;
+    text-shadow: 1px 1px 20px #c0760a;
     color: white;
   }
   svg {
     height: 1.2em;
     width: 1.2em;
+  }
+  .row {
+    background: white;
   }
   .video {
     display: -webkit-box;
@@ -128,6 +140,8 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    background-image: url("empreinte.png");
+    background-position: 25% 75%;
   }
   .iframe {
     margin: auto;
@@ -136,33 +150,35 @@
     font-weight: bold;
     text-decoration: underline;
     text-shadow: black 1px 1px 1px;
-    color: #b1760a;
+    color: #c0760a;
   }
   iframe {
     margin: auto;
     margin-bottom: 5%;
-  }
-  .card {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    justify-items: center;
-    width: 50%;
-    height: 50%;
-  }
-  .card-img-top {
-    position: relative;
-    margin-left: 55%;
+    -webkit-box-shadow: 10px 10px 800px #c0760a;
+            box-shadow: 10px 10px 800px #c0760a;
   }
   .card-body {
     padding-left: 25%;
     padding-right: 25%;
+    background: -webkit-gradient(linear, left top, left bottom, from(#c09f0a), color-stop(white), color-stop(100%, white), to(white));
+    background: linear-gradient(0.5turn, #c09f0a, white, white 100%, white);
   }
   .cat-sm {
     display: none;
   }
   .dog-sm {
     display: none;
+  }
+  .card-text {
+    text-align: center;
+  }
+  .dog-lg {
+    height: 55vh;
+    width: 50vw;
+  }
+  .cat-lg {
+    width: 50.0vw;
   }
 }
 
