@@ -40,10 +40,25 @@ body {
   background: linear-gradient(0.25turn, #a7a6a6, white);
 }
 
+a {
+  color: #c0760a;
+  text-decoration: underline;
+}
+
+.badge {
+  z-index: 2;
+  color: #c0760a;
+  text-shadow: 1px 0px 0px black;
+}
+
 .cat {
   z-index: 1;
   position: absolute;
   width: 100%;
+}
+
+.card-text {
+  text-align: justify;
 }
 
 .footer {
@@ -64,16 +79,6 @@ body {
           align-items: flex-start;
 }
 
-.badge {
-  z-index: 2;
-  color: #c0760a;
-  text-shadow: 1px 0px 0px black;
-}
-
-.card-text {
-  text-align: justify;
-}
-
 /*responsive lg screen*/
 @media screen and (min-width: 1200px) {
   body {
@@ -89,6 +94,9 @@ body {
     margin-right: 5%;
     font-size: 2em;
   }
+  .row {
+    background: white;
+  }
   .card-body {
     width: 50vw;
     height: 50vh;
@@ -101,36 +109,9 @@ body {
     position: absolute;
     width: 100vw;
   }
-  .footer {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    height: 100%;
-    width: 100%;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    z-index: 2;
-  }
-  .badge {
-    font-size: 2rem;
-    z-index: 2;
-    background-color: transparent;
-    text-shadow: 1px 1px 20px #c0760a;
-    color: white;
-  }
   svg {
     height: 1.2em;
     width: 1.2em;
-  }
-  .row {
-    background: white;
   }
   .video {
     display: -webkit-box;
@@ -170,8 +151,9 @@ body {
   .dog-sm {
     display: none;
   }
-  .card-text {
-    text-align: center;
+  .card-text, h5 {
+    font-size: 1.5em;
+    text-align: justify;
   }
   .dog-lg {
     height: 55vh;
@@ -179,6 +161,31 @@ body {
   }
   .cat-lg {
     width: 50.0vw;
+    height: 55vh;
+  }
+  .badge {
+    font-size: 2rem;
+    z-index: 2;
+    background-color: transparent;
+    text-shadow: 1px 1px 20px #c0760a;
+    color: white;
+  }
+  .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    z-index: 2;
   }
 }
 
