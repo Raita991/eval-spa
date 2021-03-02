@@ -208,3 +208,29 @@ a{
   
 }
 
+
+/*CSS complémentaire évènement*/
+
+.table{
+  text-align: center;
+}
+
+th{
+  color: rgb(192, 118, 10);
+}
+
+td{
+  color: gray;
+  text-shadow: 1px 1px 5px rgb(192, 118, 10);
+}
+
+.event{
+  background-color: rgb(192, 118, 10);
+  border-color: rgb(192, 118, 10);
+}
+
+h3{
+  color: rgb(192, 118, 10);
+  margin-top: 3%;
+  text-shadow: 1px 1px 1px black ;
+}
