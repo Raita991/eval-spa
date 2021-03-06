@@ -14,19 +14,19 @@
 </head>
 <body>
   <div class="row">
-    <img src="logo.png" class="img-fluid rounded mx-auto d-block logo" alt="logo">
+   <img src="logo.png" class="img-fluid rounded mx-auto d-block logo" alt="logo">
   </div>
   <div class="row">
     <div class="col-12">
       <ul class="nav justify-content-center">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Accueil</a>
+          <a class="nav-link active" aria-current="page" href="index.html">Accueil</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Évènements</a>
+          <a class="nav-link" href="evenements.html">Évènements</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link " href="#">Dons</a>
+          <a class="nav-link" href="#">Dons</a>
         </li>
       </ul>
     </div>
@@ -46,7 +46,7 @@
           <td>28/02/2021</td>
         </tr>
         <tr>
-          <td>Comment se déroule une journée au refuge pour un soigneur ?</td>
+          <td>Une journée au refuge dans la peau d'un soigneur</td>
           <td>146 avenue du Chat qui vole tout sur la Table 24500 Meublemâchée </td>
           <td>15/03/2021</td>
         </tr>
@@ -59,15 +59,48 @@
       <tfoot>
         <tr>
           <td colspan="3">
-            <button type="button" class="btn btn-primary event">Participer à l'un des évènements !</button>
+            <button type="button" class="btn btn-primary event" data-bs-toggle="modal" data-bs-target="#eventParticipation">Participer à l'un des évènements !</button>
           </td>
         </tr>
       </tfoot>
     </table>
+
+    <!-- Modal here -->
+    <div class="modal fade" id="eventParticipation" tabindex="-1" aria-labelledby="modalTitle" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="modalTitle">Pour participer... </h4>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Nom</label>
+              <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Ex: Dupont">
+            </div>
+            <div class="mb-5">
+              <label for="exampleFormControlInput2" class="form-label">Prénom</label>
+              <input type="text" class="form-control" id="exampleFormControlInput2" placeholder="Ex : Alice">
+            </div>
+            
+              <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                <option selected>Selectionner l'évènement...</option>
+                <option value="1">Inauguration d'un nouveau refuge</option>
+                <option value="2">Une journée au refuge dans la peau d'un soigneur</option>
+                <option value="3">La SPA vous aide aussi dans le dressage de votre animal !</option>
+              </select>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+            <button type="button" class="btn btn-primary event">Je participe !</button>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-  <div class="row">
+  <div class="row foot">
     <img src="picture.jpg" class="img-fluid cat" alt="Cat">
-    
+    <img src="dog.jpg" class="img-fluid dog" alt="Dog">
     <div class="footer">
       <a href="https://www.facebook.com/spaofficiel" target="_blank">
         <button type="button" class="btn">
@@ -82,7 +115,7 @@
         </button>
       </a>
       <a href="https://twitter.com/SPA_Officiel?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">
-        <button type="button" class="btn btn-primary">
+        <button type="button" class="btn">
           <span class="badge">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter"
               viewBox="0 0 16 16">
@@ -104,8 +137,7 @@
               Instagram
           </span>
         </button>
-      </a>
-      <img src="dog.jpg" class="img-fluid dog" alt="Dog"> 
+      </a> 
     </div>
   </div>
 </body>

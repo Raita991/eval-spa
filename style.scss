@@ -44,6 +44,10 @@ a{
   text-decoration: underline;
 }
 
+a:hover{
+  color: grey;
+}
+
 .badge{
   z-index: 2;
   color: rgb(192, 118, 10);
@@ -60,14 +64,13 @@ a{
   text-align: justify;
 }
 
-
 .footer{
   display: flex;
   height: 100%;
   width: 100%;
   flex-direction: column;
   justify-content: space-between;
-  align-items: flex-start;
+  align-self: center;
   
   
 }
@@ -177,6 +180,10 @@ a{
     color: rgb(255, 255, 255);
   }
 
+  .foot{
+    height: 50vh;
+  }
+
   .footer{
     display: flex;
     height: 100%;
@@ -213,6 +220,7 @@ a{
 
 .table{
   text-align: center;
+  height: 75vh;
 }
 
 th{
@@ -227,6 +235,22 @@ td{
 .event{
   background-color: rgb(192, 118, 10);
   border-color: rgb(192, 118, 10);
+}
+
+.event:hover{
+  background-color: grey;
+  border-color: grey;
+  
+}
+
+.event:active{
+  background-color: grey;
+  border-color: grey;
+}
+
+.event:focus{
+  background-color: grey;
+  border-color: grey;
 }
 
 h3{

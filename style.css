@@ -46,6 +46,10 @@ a {
   text-decoration: underline;
 }
 
+a:hover {
+  color: grey;
+}
+
 .badge {
   z-index: 2;
   color: #c0760a;
@@ -75,9 +79,8 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -ms-flex-item-align: center;
+      align-self: center;
 }
 
 /*responsive lg screen*/
@@ -171,6 +174,9 @@ a {
     text-shadow: 1px 1px 20px #c0760a;
     color: white;
   }
+  .foot {
+    height: 50vh;
+  }
   .footer {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -208,6 +214,7 @@ a {
 /*CSS complémentaire évènement*/
 .table {
   text-align: center;
+  height: 75vh;
 }
 
 th {
@@ -222,6 +229,21 @@ td {
 .event {
   background-color: #c0760a;
   border-color: #c0760a;
+}
+
+.event:hover {
+  background-color: grey;
+  border-color: grey;
+}
+
+.event:active {
+  background-color: grey;
+  border-color: grey;
+}
+
+.event:focus {
+  background-color: grey;
+  border-color: grey;
 }
 
 h3 {
