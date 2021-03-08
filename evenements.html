@@ -13,10 +13,10 @@
    crossorigin="anonymous"></script>
 </head>
 <body>
-  <div class="row">
-   <img src="logo.png" class="img-fluid rounded mx-auto d-block logo" alt="logo">
+  <div class="row linear">
+    <a class="logo img-fluid rounded mx-auto d-block" href="index.html"><img src="logo.png" alt="logo"></a>
   </div>
-  <div class="row">
+  <div class="row linear">
     <div class="col-12">
       <ul class="nav justify-content-center">
         <li class="nav-item">
@@ -26,13 +26,18 @@
           <a class="nav-link" href="evenements.html">Évènements</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Dons</a>
+          <a class="nav-link" href="dons.html">Dons</a>
         </li>
       </ul>
     </div>
   </div>
-  <div class="row">
+  <div class="row linear">
     <h3>Les évènements à venir...</h3>
+    <div class="empreinte" style="margin-top: 6.9%;">
+      <img class='fond' src="empreinte.png" alt="empreinte">
+      <img class='fond' src="empreinte.png" alt="empreinte">
+      <img class='fond' src="empreinte.png" alt="empreinte">
+    </div>
     <table class="table table-striped table-hover">
       <thead>
         <th>Évènements</th>
@@ -41,25 +46,25 @@
       </thead>
       <tbody>
         <tr>
-          <td>Inauguration d'un nouveau refuge</td>
-          <td>19 rue du Poulet qui Couine 96130 Nonos</td>
-          <td>28/02/2021</td>
+          <td class="align-middle">Inauguration d'un nouveau refuge</td>
+          <td class="align-middle">19 rue du Poulet qui Couine 96130 Nonos</td>
+          <td class="align-middle">28/02/2021</td>
         </tr>
         <tr>
-          <td>Une journée au refuge dans la peau d'un soigneur</td>
-          <td>146 avenue du Chat qui vole tout sur la Table 24500 Meublemâchée </td>
-          <td>15/03/2021</td>
+          <td class="align-middle">Une journée au refuge dans la peau d'un soigneur</td>
+          <td class="align-middle">146 avenue du Chat qui vole tout sur la Table 24500 Meublemâchée </td>
+          <td class="align-middle">15/03/2021</td>
         </tr>
         <tr>
-          <td>La SPA vous aide aussi dans le dressage de votre animal !</td>
-          <td>53 rue de la Litière a changer 62480 Petit-Laser</td>
-          <td>04/05/2021</td>
+          <td class="align-middle">La SPA vous aide aussi dans le dressage de votre animal !</td>
+          <td class="align-middle">53 rue de la Litière a changer 62480 Petit-Laser</td>
+          <td class="align-middle">04/05/2021</td>
         </tr>
       </tbody>
       <tfoot>
         <tr>
           <td colspan="3">
-            <button type="button" class="btn btn-primary event" data-bs-toggle="modal" data-bs-target="#eventParticipation">Participer à l'un des évènements !</button>
+            <button type="button" class="btn event" data-bs-toggle="modal" data-bs-target="#eventParticipation">Participer à l'un des évènements !</button>
           </td>
         </tr>
       </tfoot>
@@ -92,13 +97,15 @@
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
-            <button type="button" class="btn btn-primary event">Je participe !</button>
+            <button type="button" class="btn event">Je participe !</button>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <div class="row foot">
+  <!--Modal End-->
+
+  <div class="row foot linear">
     <img src="picture.jpg" class="img-fluid cat" alt="Cat">
     <img src="dog.jpg" class="img-fluid dog" alt="Dog">
     <div class="footer">

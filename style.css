@@ -15,7 +15,7 @@ body {
   font-size: 1.5em;
 }
 
-.row {
+.linear {
   padding-top: 3%;
   background-color: #c7b9b9;
   padding: 0%;
@@ -125,8 +125,15 @@ a:hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    background-image: url("empreinte.png");
-    background-position: 25% 75%;
+  }
+  .empreinte {
+    z-index: 0;
+    position: absolute;
+  }
+  .fond {
+    height: 33%;
+    width: 33%;
+    opacity: 0.6;
   }
   .iframe {
     margin: auto;
@@ -142,6 +149,7 @@ a:hover {
     margin-bottom: 5%;
     -webkit-box-shadow: 10px 10px 800px #c0760a;
             box-shadow: 10px 10px 800px #c0760a;
+    z-index: 1;
   }
   .card-body {
     padding-left: 25%;
@@ -194,6 +202,12 @@ a:hover {
             align-items: center;
     z-index: 2;
   }
+  .table {
+    font-size: 1.5em;
+  }
+  .bdy {
+    background: white;
+  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -209,12 +223,16 @@ a:hover {
   .cat-lg {
     display: none;
   }
+  .fond {
+    display: none;
+  }
 }
 
 /*CSS complémentaire évènement*/
 .table {
   text-align: center;
   height: 75vh;
+  background: transparent;
 }
 
 th {
@@ -237,18 +255,25 @@ td {
 }
 
 .event:active {
-  background-color: grey;
-  border-color: grey;
+  background-color: #c0760a;
+  border-color: #c0760a;
 }
 
 .event:focus {
-  background-color: grey;
-  border-color: grey;
+  background-color: #c0760a;
+  border-color: #c0760a;
 }
 
 h3 {
   color: #c0760a;
   margin-top: 3%;
   text-shadow: 1px 1px 1px black;
+}
+
+/*style page dons*/
+.content {
+  margin-top: 5%;
+  margin-left: 18%;
+  margin-right: 18%;
 }
 /*# sourceMappingURL=style.css.map */

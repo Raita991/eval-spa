@@ -14,7 +14,7 @@ body{
   font-size: 1.5em;
 }
 
-.row{
+.linear{
   padding-top: 3%;
   background-color: rgb(199, 185, 185);
   padding: 0%;
@@ -122,10 +122,18 @@ a:hover{
   .video{
     display: flex;
     flex-direction: column;
-    background-image: url("empreinte.png");
-    background-position: 25% 75%; 
+  }
+
+  .empreinte{
+    z-index: 0;
+    position: absolute;
   }
   
+  .fond{
+    height: 33%;
+    width: 33%;
+    opacity: 0.6;
+  }
   
   .iframe{
     margin: auto;
@@ -135,12 +143,14 @@ a:hover{
     text-decoration: underline;
     text-shadow: black 1px 1px 1px;
     color: rgb(192, 118, 10);
+
   }
   
   iframe{
     margin: auto;
     margin-bottom: 5%;
     box-shadow: 10px 10px 800px rgb(192, 118, 10);
+    z-index: 1;
   }
   
   .card-body{
@@ -193,6 +203,14 @@ a:hover{
     align-items: center;
     z-index: 2;
   }
+
+  .table{
+  font-size: 1.5em;
+  }
+
+  .bdy{
+    background: white;
+  }
 }
 
 
@@ -213,6 +231,9 @@ a:hover{
     display: none;
   }
   
+  .fond{
+    display: none;
+  }
 }
 
 
@@ -221,6 +242,7 @@ a:hover{
 .table{
   text-align: center;
   height: 75vh;
+  background: transparent;
 }
 
 th{
@@ -244,17 +266,26 @@ td{
 }
 
 .event:active{
-  background-color: grey;
-  border-color: grey;
+  background-color: rgb(192, 118, 10);
+  border-color: rgb(192, 118, 10);
 }
 
 .event:focus{
-  background-color: grey;
-  border-color: grey;
+  background-color: rgb(192, 118, 10);
+  border-color: rgb(192, 118, 10);
 }
 
 h3{
   color: rgb(192, 118, 10);
   margin-top: 3%;
   text-shadow: 1px 1px 1px black ;
+}
+
+
+/*style page dons*/
+
+.content{
+  margin-top: 5%;
+  margin-left: 18%;
+  margin-right: 18%;
 }
