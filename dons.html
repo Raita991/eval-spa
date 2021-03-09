@@ -14,95 +14,101 @@
 </head>
 
 <body class="bdy">
-  
-  <div class="row">
-    <a class="logo img-fluid rounded mx-auto d-block" href="index.html"><img src="logo.png" alt="logo"></a>
-  </div>
-  <div class="row">
-    <div class="col-12">
-      <ul class="nav justify-content-center">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="index.html">Accueil</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="evenements.html">Évènements</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link " href="dons.html">Dons</a>
-        </li>
-      </ul>
+  <header>
+    <div class="row">
+      <a class="logo img-fluid rounded mx-auto d-block" href="index.html"><img src="logo.png" alt="logo"></a>
     </div>
-  </div>
+    <nav>
+      <div class="row">
+        <div class="col-12">
+          <ul class="nav justify-content-center">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Accueil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="evenements.html">Évènements</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="dons.html">Dons</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
 
-  <div class="empreinte2">
-    <img class='fond' src="empreinte.png" alt="empreinte">
-    <img class='fond' src="empreinte.png" alt="empreinte">
-    <img class='fond' src="empreinte.png" alt="empreinte">
-  </div>
-    <div class="row content">
-      <div class="input-group mb-3">
-        <span class="input-group-text">Prénom & Nom</span>
-        <input type="text" aria-label="Prénom" class="form-control">
-        <input type="text" aria-label="Nom" class="form-control">
-      </div>
-      <div class="input-group mb-3">
-        <span class="input-group-text" id="inputGroup-sizing-default">Adresse</span>
-        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-      </div>
-      <div class="input-group mb-3">
-        <span class="input-group-text">Ville & Code Postale</span>
-        <input type="text" aria-label="Ville" class="form-control">
-        <input type="text" aria-label="CodePostale" class="form-control">
-      </div>
-      <div class="input-group mb-3">
-        <input type="text" class="form-control" placeholder="Email" aria-label="Username">
-        <span class="input-group-text">@</span>
-        <input type="text" class="form-control" aria-label="Server">
-      </div>
-      <select class="form-select" aria-label="Default select example" style="margin-bottom: 3%;">
-        <option selected>Choississez le montant de votre don :</option>
-        <option value="1">5€</option>
-        <option value="2">10€</option>
-        <option value="3">20€</option>
-        <option value="4">50€</option>
-        <option value="5">100€</option>
-        <option value="6">150€</option>
-        <option value="7">200€</option>
-      </select>
-      <div class="input-group mb-3">
-        <span class="input-group-text">Ou rentrer le montant souhaité</span>
-        <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
-        <span class="input-group-text">€</span>
-      </div>
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-        <label class="form-check-label" for="flexCheckDefault">
-          Je souhaite recevoir la newsletter !
-        </label>
-      </div>
-      <button type="button" class="btn event centre" data-bs-toggle="modal" data-bs-target="#validezMonDon">Validez mon don !</button>
+  <main>
+    <div class="empreinte2">
+      <img class='fond' src="empreinte.png" alt="empreinte">
+      <img class='fond' src="empreinte.png" alt="empreinte">
+      <img class='fond' src="empreinte.png" alt="empreinte">
     </div>
-    
-    <!-- Modal here -->
-    <div class="modal fade" id="validezMonDon" tabindex="-1" aria-labelledby="modalTitle" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h4 class="modal-title" id="modalTitle">Validation du don</h4>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <p>La SPA vous remercie infiniment !</p>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+      <div class="row content">
+        <div class="input-group mb-3">
+          <span class="input-group-text">Prénom & Nom</span>
+          <input type="text" aria-label="Prénom" class="form-control">
+          <input type="text" aria-label="Nom" class="form-control">
+        </div>
+        <div class="input-group mb-3">
+          <span class="input-group-text" id="inputGroup-sizing-default">Adresse</span>
+          <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+        </div>
+        <div class="input-group mb-3">
+          <span class="input-group-text">Ville & Code Postale</span>
+          <input type="text" aria-label="Ville" class="form-control">
+          <input type="text" aria-label="CodePostale" class="form-control">
+        </div>
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" placeholder="Email" aria-label="Username">
+          <span class="input-group-text">@</span>
+          <input type="text" class="form-control" aria-label="Server">
+        </div>
+        <select class="form-select" aria-label="Default select example" style="margin-bottom: 3%;">
+          <option selected>Choississez le montant de votre don :</option>
+          <option value="1">5€</option>
+          <option value="2">10€</option>
+          <option value="3">20€</option>
+          <option value="4">50€</option>
+          <option value="5">100€</option>
+          <option value="6">150€</option>
+          <option value="7">200€</option>
+        </select>
+        <div class="input-group mb-3">
+          <span class="input-group-text">Ou rentrer le montant souhaité</span>
+          <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+          <span class="input-group-text">€</span>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            Je souhaite recevoir la newsletter !
+          </label>
+        </div>
+        <button type="button" class="btn event centre" data-bs-toggle="modal" data-bs-target="#validezMonDon">Validez mon don !</button>
+      </div>
+      
+      <!-- Modal here -->
+      <div class="modal fade" id="validezMonDon" tabindex="-1" aria-labelledby="modalTitle" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title" id="modalTitle">Validation du don</h4>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>La SPA vous remercie infiniment !</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <!--Modal End-->
+    <!--Modal End-->
+  </main>
 
+  <footer>
     <div class="row foot">
       <img src="picture.jpg" class="img-fluid cat" alt="Cat">
       <img src="dog.jpg" class="img-fluid dog" alt="Dog">
@@ -145,5 +151,5 @@
         </a> 
       </div>
     </div>
-
+  </footer>
 </body>
